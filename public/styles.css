@@ -1,0 +1,225 @@
+/**
+ * Name: Sihan, Ameya
+ * Date: December 10, 2021
+ * Section: CSE 154 AF
+ *
+ * Provided styles for the index.html file for our final project. The class
+ * registration site that we made has a light purple color with purple buttons.
+ * The containers for the list of classes mostly had a light slightly yellow
+ * background. The user can toggle between a list and a grid view. Hovering over
+ * the classes in list view will underline them in orange. In grid view, the
+ * background will turn purple with the text turning white with light purple shadows.
+ */
+
+body {
+  background-color: #DFDBE5;
+}
+
+table {
+  margin: auto;
+  background-color: rgb(243, 243, 226);
+  border-radius: 10px;
+  border: dotted 1px;
+}
+
+tr {
+  height: 70px;
+  font-size: 20px;
+  text-align: center;
+}
+
+th {
+  width: 400px;
+  font-size: 30px;
+  margin: auto;
+}
+
+#login-title {
+  padding: 50px;
+  margin: auto;
+}
+
+form, .text-styling {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+}
+
+#error-tag {
+  margin-top: 20px;
+  color: rgb(129, 92, 22);
+}
+
+form {
+  border: solid 1px black;
+  padding: 10px;
+  background-color: #8878c3;
+}
+
+label, input, button, .search {
+  padding: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+label {
+  color: whitesmoke;
+}
+
+h1 {
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: 'Playfair Display', serif;
+}
+
+div {
+  font-size: 25px;
+}
+
+#home-view {
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+}
+
+.classes-container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.class {
+  display: flex;
+  background-color: rgb(243, 243, 226);
+  border: black 1px dotted;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.class:hover {
+  text-decoration: underline orangered;
+  transform: scale(1.02);
+}
+
+.class div {
+  padding: 20px;
+}
+
+.class-grid {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 243, 226);
+  border: black 1px dotted;
+  border-radius: 10px;
+  margin: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  width: 320px;
+  height: 320px;
+  text-align: center;
+}
+
+.class-grid div {
+  margin: 30px;
+}
+
+.classes-container-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.class-grid:hover {
+  background-color: indigo;
+  color: lavender;
+  text-shadow: 2px 2px 4px peachpuff;
+}
+
+.view-buttons {
+  background-color: rebeccapurple;
+  float: right;
+  font-family: 'Playfair Display', serif;
+  height: 50px;
+  font-size: 15px;
+  color: ghostwhite;
+  margin-right: 20px;
+}
+
+#add-class, #enroll, .back-btn, .view-buttons {
+  border-radius: 40px;
+  border: none;
+}
+
+#add-class, #enroll, .back-btn {
+  background-color: rebeccapurple;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: ghostwhite;
+  width: 300px;
+}
+
+#add-class:hover, #enroll:hover, .back-btn:hover, .view-buttons:hover {
+  background-color: peachpuff;
+  color: blueviolet;
+}
+
+#class-view p, #history-view p {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(243, 243, 226);
+  border-radius: 10px;
+  border: dotted 1px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search {
+  float: right;
+  margin: auto;
+  margin-top: 15px;
+  color: black;
+  margin-right: 5px;
+}
+
+#search-btn {
+  margin-right: 50px;
+  border-radius: 10px;
+}
+
+#search-term {
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+#special-tag {
+  font-size: 30px;
+  text-align: center;
+}
+
+header {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logout {
+  border-radius: 10px;
+  height: 45px;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!--
+  Name: Sihan, Ameya
+  Date: December 10, 2021
+  Section: CSE 154 AF
+
+  This is the HTML page for our final project. It provides the structure for our
+  course registration website. The user will need to login to see a list of classes
+  where the user can then use the filters and the search bar to find the classes
+  interested in, click on them to see the details, put them in a registration list,
+  enroll in those classes, and check the confirmation number for each enrollment.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Register for Classes :D</title>
+  </head>
+  <body>
+    <header class="hidden">
+      <p id="special-tag">Welcome, <span id="nickname"></span></p>
+      <button id="logout">Logout</button>
+    </header>
+    <article id="login-view" class="text-styling">
+      <h1 id="login-title">Student Login</h1>
+      <form id="login-form">
+        <label for="username">Type Username Here!</label>
+        <input type="text" id="username" name="username"
+          placeholder="Username" autocomplete="on" required>
+        <label for="password">Type Password Here!</label>
+        <input type="password" id="password" name="password"
+          placeholder="Password" autocomplete="on" required>
+        <button id="submit">Submit!</button>
+      </form>
+    </article>
+    <article id="home-view" class="hidden">
+      <nav>
+        <button id='search-btn' class="search">Search!</button>
+        <input id='search-term' class="search" type='text'>
+        <button id="list-view" class="view-buttons">List View</button>
+        <button id="grid-view" class="view-buttons">Grid View</button>
+        <button id="registration-btn" class="view-buttons">Registration List</button>
+        <button id="enrollments-btn" class="view-buttons">Enrollments</button>
+        <button id="history-btn" class="view-buttons">History</button>
+        <select name="filter" id="filter" class="search">
+          <option value="none">None</option>
+          <option value="ART">ART</option>
+          <option value="ASIAN">ASIAN</option>
+          <option value="CSE">CSE</option>
+          <option value="ECON">ECON</option>
+          <option value="ENGL">ENGL</option>
+          <option value="ESS">ESS</option>
+          <option value="JAPAN">JAPAN</option>
+          <option value="MATH">MATH</option>
+          <option value="1">1 Cr.</option>
+          <option value="2">2 Cr.</option>
+          <option value="3">3 Cr.</option>
+          <option value="4">4 Cr.</option>
+          <option value="5">5 Cr.</option>
+        </select>
+        <label class="search" for="filter">Filter By:</label>
+      </nav>
+      <h1 id="class-title">Offered Classes</h1>
+      <div id="home-container" class="classes-container"></div>
+    </article>
+    <article id="class-view" class="hidden">
+      <h1 id="class-name"></h1>
+      <p>Description: <span id="desc"></span></p>
+      <p>Prerequisites: <span id="prereqs"></span></p>
+      <p>Schedule: <span id="schedule"></span></p>
+      <p>Majors Only?: <span id="major"></span></p>
+      <p>Current Enrollment: <span id="capacity"></span></p>
+      <div class="button-div">
+        <button id="add-class">Add to Registration List</button>
+        <button class="back-btn">Back to Class List</button>
+      </div>
+    </article>
+    <article id="registration-view" class="hidden">
+      <h1>Selected Classes</h1>
+      <div id="registration-container" class="classes-container"></div>
+      <div class="button-div">
+        <button id="enroll">Enroll All</button>
+        <button class="back-btn">Back to Class List</button>
+      </div>
+    </article>
+    <article id="enrollments-view" class="hidden">
+      <h1>Enrolled Classes</h1>
+      <div id="enrollments-container" class="classes-container"></div>
+      <div class="button-div">
+        <button class="back-btn">Back to Class List</button>
+      </div>
+    </article>
+    <article id="history-view" class="hidden">
+      <h1>History</h1>
+      <table id="transaction-table">
+        <tr>
+          <th>Confirmation #</th>
+          <th>Notes</th>
+          <th>Date and Time</th>
+        </tr>
+      </table>
+      <div class="button-div">
+        <button class="back-btn">Back to Class List</button>
+      </div>
+    </article>
+  </body>
+</html>
