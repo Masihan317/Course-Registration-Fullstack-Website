@@ -1,4 +1,4 @@
-# Final Project
+# Course-Registration-Fullstack-Website
 
 ## This is a Course Registration Website!
 An introduction video can be found here:
